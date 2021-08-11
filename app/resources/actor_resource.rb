@@ -8,6 +8,9 @@ class ActorResource < ApplicationResource
 
   # Direct associations
 
+  has_many   :filmographies,
+             resource: RoleResource
+
   # Indirect associations
 
 end
