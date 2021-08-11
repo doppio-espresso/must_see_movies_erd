@@ -2,10 +2,10 @@ class Movie < ApplicationRecord
   # Direct associations
 
   has_many   :filmographies,
-             :class_name => "Role"
+             class_name: "Role"
 
   belongs_to :director,
-             :counter_cache => true
+             counter_cache: true
 
   # Indirect associations
 
@@ -16,5 +16,4 @@ class Movie < ApplicationRecord
   def to_s
     movie_title
   end
-
 end

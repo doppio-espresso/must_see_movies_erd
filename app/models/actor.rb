@@ -2,7 +2,7 @@ class Actor < ApplicationRecord
   # Direct associations
 
   has_many   :filmographies,
-             :class_name => "Role"
+             class_name: "Role"
 
   # Indirect associations
 
@@ -13,5 +13,4 @@ class Actor < ApplicationRecord
   def to_s
     first_name
   end
-
 end
